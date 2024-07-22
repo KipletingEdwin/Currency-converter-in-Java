@@ -1,15 +1,23 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.HashMap;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        HashMap<Integer, String> currencyCodes = new HashMap<Integer, String>();
+
+        //Add currency codes
+        currencyCodes.put(1, "USD");
+        currencyCodes.put(2, "CAD");
+        currencyCodes.put(3, "EUR");
+        currencyCodes.put(4, "HKD");
+        currencyCodes.put(5, "INR");
+
+        String fromCode, toCode;
+        double amount;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to the currency converter!");
+
     }
 }
