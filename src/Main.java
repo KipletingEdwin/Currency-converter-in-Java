@@ -17,7 +17,14 @@ public class Main {
         double amount;
 
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Welcome to the currency converter!");
+
+        System.out.println("Currency converting from?");
+
+        System.out.println("1:USD (US Dollar)\t 2:CAD (Canadian Dollar)\t 3:EUR (Euro)\t 4:HKD (Hong Kon Dollar)\t 5:INR (Indian Rupee)");
+        fromCode = currencyCodes.get(sc.nextInt());
+
 
     }
 }
